@@ -1,10 +1,8 @@
-#before running this install the "pip install pgmpy"
 import numpy as np
 import pandas as pd
 from pgmpy.models import BayesianModel
 from pgmpy.estimators import MaximumLikelihoodEstimator
 from pgmpy.inference import VariableElimination
-from io import StringIO
 
 heart_disease = pd.read_csv('heart.csv')
 
@@ -20,14 +18,13 @@ model = BayesianModel([
     ('cp', 'output'),
     ('trtbps', 'output'),
     ('chol', 'output'),
-    ('restecg', 'output'),
-    ('thalachh', 'output'),
-    ('exng', 'output'),
-    ('oldpeak', 'output')
+    ('restecg', 'output')
 ])
 
+heart_disease_sampled = heart_disease.sample(frac=0.1, random_state=42)
+
 print('\nLearning CPDs using Maximum Likelihood Estimators...')
-model.fit(heart_disease, estimator=MaximumLikelihoodEstimator)
+model.fit(heart_disease_sampled, estimator=MaximumLikelihoodEstimator)
 
 print('\nInferencing with Bayesian Network:')
 heart_disease_infer = VariableElimination(model)
