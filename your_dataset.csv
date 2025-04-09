@@ -1,11 +1,17 @@
 text,label
-"I love this movie, it was fantastic!",positive
-"This film was terrible and boring",negative
-"Amazing performance by the lead actor",positive
-"The storyline was weak and unconvincing",negative
-"Brilliant direction and cinematography",positive
-"The plot was predictable and dull",negative
-"Exceptional music and background score",positive
-"The characters lacked depth and realism",negative
-"A must-watch for everyone",positive
-"Not worth my time",negative
+"Government passes new health bill",politics
+"Team wins the football championship",sports
+"New breakthrough in quantum computing",technology
+"President addresses the nation",politics
+"Local player scores winning goal",sports
+"Scientists discover new planet",technology
+"Election campaigns are heating up",politics
+"Latest match ends in a draw",sports
+"Tech company launches new product",technology
+"Senate debates tax reform bill",politics
+"Coach praises team's performance",sports
+"AI is transforming industries",technology
+"Parliament discusses climate change",politics
+"Cricket fans celebrate big win",sports
+"Smartphones get smarter every year",technology
+
